@@ -1,6 +1,6 @@
-const cds = require('@sap/cds');
+import cds from '@sap/cds';
 
-module.exports = cds.service.impl(function () {
+export default cds.service.impl(function () {
     const { Books } = this.entities;
 
     this.on('reabastecer', async (req) => {
